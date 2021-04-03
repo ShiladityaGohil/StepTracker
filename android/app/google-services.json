@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "436280161036",
+    "project_id": "pedometer-c32e4",
+    "storage_bucket": "pedometer-c32e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436280161036:android:d30fbc82dd0516af3fcf29",
+        "android_client_info": {
+          "package_name": "com.example.steptracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436280161036-rv9k7il4b89igrp3uhuh794ppjrnunjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADEVx640VqmIXM-h8BtUiWWvcrHw2QYmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436280161036-rv9k7il4b89igrp3uhuh794ppjrnunjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
