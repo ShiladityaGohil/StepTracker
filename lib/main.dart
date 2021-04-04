@@ -4,10 +4,11 @@ import 'package:steptracker/pages/loginScreen.dart';
 import 'package:steptracker/screen1.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const String boxname='';
+const String boxname = '';
 Future<void> main() async {
   runApp(Myapp());
 }
+
 class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,17 +20,17 @@ class Myapp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        
       ),
       darkTheme: ThemeData.dark().copyWith(
         textTheme: GoogleFonts.darkerGrotesqueTextTheme(
           Theme.of(context).textTheme,
         ),
       ),
-      home:Homepage(),
+      home: Homepage(),
     );
   }
 }
+
 class Homepage extends StatefulWidget {
   final String uid;
 
