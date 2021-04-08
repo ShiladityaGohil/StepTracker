@@ -52,7 +52,7 @@ class _FriendsState extends State<Friends> with TickerProviderStateMixin {
     final Future<DocumentSnapshot> document =
         Firestore.instance.collection('users').document(uid).get();
     document.then<dynamic>((DocumentSnapshot snapshot) async {
-      setState(() async {
+      setState(()  async {
         frilist = List.from(snapshot.data['friends']);
       });
     });
@@ -289,11 +289,16 @@ class _FriendsState extends State<Friends> with TickerProviderStateMixin {
             title: TabBar(
               tabs: [
                 Text(
-                  'Global',
-                  style: TextStyle(fontSize: 30),
+                 'Global',
+                 textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                    
+                  ),
                 ),
                 Text(
                   'Friends',
+                  textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 30),
                 )
               ],
@@ -343,6 +348,9 @@ class _FriendsState extends State<Friends> with TickerProviderStateMixin {
             Container(
               height: 45,
               // ignore: deprecated_member_use
+              
+              child: Padding(
+                padding: EdgeInsets.only(bottom:5.0, right: 5.0),
               child: RaisedButton(
                   child: Text(
                     "Find Friends",
@@ -362,7 +370,9 @@ class _FriendsState extends State<Friends> with TickerProviderStateMixin {
                   shape: RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(30.0))),
             )
-          ]),
+          )
+          ]
+        ),
         ),
       ],
     );

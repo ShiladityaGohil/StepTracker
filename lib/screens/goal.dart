@@ -229,7 +229,7 @@ class _GoalState extends State<Goal> {
           child: Stack(
         children: [
           Padding(
-              padding: EdgeInsets.only(left: 350, top: 40),
+              padding: EdgeInsets.only(left: 330, top: 25),
               child: Container(
                 child: InkWell(
                     onTap: () {
@@ -331,7 +331,7 @@ class _GoalState extends State<Goal> {
                               border: OutlineInputBorder(),
                               labelText: "Set Your Today's Goal"),
                           style: TextStyle(
-                              fontSize: 40.0,
+                              fontSize: 30.0,
                               height: 1.0,
                               color: Colors.white))),
                   Padding(
